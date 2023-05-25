@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de conferencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form name="formulario" method="post" autocomplete="off" class="formulario">
+    <h1>usuarios asistentes a la conferencia</h1>
+
+    <h3>Agregue su nombre completo</h3>
+    <input class="Registros" type="text" name="nombre"   placeholder="Ingrese su nombre completo">
+    <h3>Agregue un correo electronico</h3>
+    <input class="Registros" type="email" name="correo" placeholder="Agregue su correo electronico">
+    <h3>Agrega tu domicilio</h3>
+    <input class="Registros" type="text" name="domicilio"   placeholder="Ingrese su domicilio">
+    <h3>Agrega la fecha de nacimiento</h3>
+    <input class="Registros" type="date" name="Selecciona tu fecha de nacimiento" min="1980-01-01" max="2010-01-01" step="2">
+
+    <h3>Selecciona una opcion</h3>
+    <p> sexo:
+        <input class="Genero" type="radio" name="Sexo" value="H"> Hombre
+        <input class="Genero" type="radio" name="Sexo" value="M"> Mujer
+    </p>
+
+    <h3>Ocupacion</h3>
+    <select name="Ocupacion" class="Opciones"> 
+    <option  value="1">Capturista</option>
+    <option value="2">Desarrollador web</option>
+    <option value="3">Desarrollo movil</option>
+    <option value="4">Desarollo de aplicaciones de escritorio</option>
+    <option value="5">Seguridad informatica</option>
+    <option value="6">Otro</option>
+    </select>
+    <p>
+    Elija una opcion de Tallas 
+    <select name="Tallas" class="Tallas">
+        <option  value="1">S</option>
+        <OPtion  value="2">M</OPtion>
+        <Option  value="3">L</Option>
+        <OPtion  value="4">XL</OPtion>
+    </select>
+    </p>
+
+    <h3>Elige una opcion:</h3>
+    <p>
+    Vegetariano 
+    <input class="Seleccion" type="checkbox" name="Seleccion">
+    Vegano
+    <input class="Seleccion" type="checkbox" name="Seleccion">
+    Sin Gluten
+    <input class="Seleccion"  type="checkbox" name="Seleccion">
+    Sin restricciones
+    <input class="Seleccion" type="checkbox" name="Seleccion">
+    </p>
+    <input class="Boton" type="submit" value="Enviar formulario">
+    <input class="Boton" type="reset" value="Borrar formulario">
+    </form>
+    </form>
+</body>
+</html>
